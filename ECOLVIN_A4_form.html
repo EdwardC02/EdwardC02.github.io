@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-AU">                                                                                                             <!-- Meta -->
+<head>
+    <meta name="description" content="NSW Statewide Solar newsletter signup form">
+    <meta name="author" content="Edward Colvin">
+    <meta charset="UTF-8">
+    <title>NEWSLETTER SIGNUP FORM</title>
+    <link rel="stylesheet" href="CSS/formstyle.css">
+</head>
+<body>
+    
+    <h4>NSW Statewide Solar Corp Newsletter Signup</h4>
+    <span>* marks required</span>
+    <br>
+    <form name="newsletterform" onsubmit="return validation()">
+        <label for="firstName">First Name: <span>*</span></label>                                                            <!-- Question asking firstname -->
+        <input type="text" placeholder="Enter Name" id="firstName" name="firstName" maxlength="60"><br><br>
+
+        <label for="surname">Surname: <span>*</span></label>                                                                 <!-- Question asking surname -->
+        <input type="text" placeholder="Enter Surname" id="surname" name="surname" maxlength="60"><br><br>
+
+        <label for="mail">Email Address: <span>*</span></label>                                                              <!-- Question asking email address -->
+        <input type="email" placeholder="Enter Email Address" id="mail" name="mail" maxlength="60" required><br><br>
+
+        <p>Age Range You Fall Under:</p>                                                                                     <!-- Age range radio buttons -->
+        <input type="radio" id="youngestBracket" name="age" value="15-25">
+        <label for="youngestBracket">15-25</label>
+        <input type="radio" id="youngerBracket" name="age" value="26-35">
+        <label for="youngerBracket">26-35</label>
+        <input type="radio" id="middleBracket" name="age" value="36-45">
+        <label for="middleBracket">36-45</label>
+        <input type="radio" id="olderBracket" name="age" value="46-55">
+        <label for="olderBracket">46-55</label>
+        <input type="radio" id="oldestBracket" name="age" value="55+">
+        <label for="oldestBracket">55+</label> 
+        <br>
+
+        <p>Select Branches You'd Like To Follow:</p>                                                                         <!-- Branches checkboxes -->
+        <input type="checkbox" id="branch0" name="branch" value="R&D">
+        <label for="branch0">Research and Development</label>
+        <input type="checkbox" id="branch1" name="branch" value="Manufactoring">
+        <label for="branch1">Manufactoring</label>
+        <input type="checkbox" id="branch2" name="branch" value="Grid">
+        <label for="branch2">Grid Maintanance</label>
+        <input type="checkbox" id="branch3" name="branch" value="Install">
+        <label for="branch3">Installation</label>    
+        <input type="checkbox" id="branch4" name="branch" value="Export">
+        <label for="branch4">Exporting</label>
+        <br>
+
+        <p>Feedback or Comments:</p>                                                                                        <!-- Feedback text area -->
+        <textarea name="feedback" rows="3" cols="60" placeholder="Feedback"></textarea>
+        <br><br>
+        <input type="reset" name="Reset">
+        <input type="submit" name="Submit">
+    </form>
+    <script> 
+        alert("Welcome to the NSW Statewide Solar Corporation/Ltd.- Newsletter Signup");            //this provides the alert on the form being openned
+    
+        function validation (){                                                                     //function that checks both first and last names are given, stopping submittion if they are not
+            let fname = document.forms["newsletterform"]["firstName"].value;
+            let sname = document.forms["newsletterform"]["surname"].value;
+            if (fname == ""){
+                alert("First Name cannot be empty");
+                return false;
+            } else if (sname == ""){
+                alert("Surname cannot be empty");
+                return false;
+            } else {
+                alert("Form submitted Successfully. You may now close the page.");
+                return true;
+            }
+        }
+
+        
+    
+    </script>
+</body>
+</html>

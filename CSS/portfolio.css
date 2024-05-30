@@ -1,0 +1,190 @@
+/*Styling for main webpages*/  
+
+header {
+    background-color: #9e9400;
+    font-size:larger
+}
+
+body {
+    background-color: #002747ef;
+    text-align: center;
+    color:#ffffff;
+    margin:auto;
+}
+
+h1 {
+    color:#fff389;
+}
+
+h3 {
+    text-align: left;
+    margin-left: 15%;
+}
+
+p {
+    margin-left:20%;
+    margin-right: 20%;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.button{                                                                              /*Elements used in the nav bar*/
+    background-color: #9e9400;
+    padding:10px;
+    width: 10%;
+}
+
+.button:hover{
+    background-color: #beb202;
+}
+
+nav{                                                                                  
+    background-color: #9e9400;
+    margin:auto; 
+	padding:15px;
+	width:100%;
+	text-align:left;
+}
+
+nav a:first-of-type{
+    margin-left: 1%;
+}
+
+nav a{
+    text-decoration:none;
+    color:#0000ff;
+    padding-top: 15px;
+}
+
+nav img {
+    margin-left:5%;
+}
+
+nav div {
+    background-color: #9e9400;
+    color:#0000ff;
+    margin-left: 2px;
+    margin-right: auto;
+    padding: 8px;
+}
+
+.dropdownbox {
+    position: absolute;
+    display: inline;
+    cursor: pointer;
+}
+
+.dropdownlist {
+    display:none;
+    background-color: #beb202;
+    
+    width: 100%;
+}
+
+.dropdownlist:hover{
+    background-color: #9e9400;
+}
+
+.dropdownbox:hover .dropdownlist{display:block}
+
+.dropdownbox:hover {background-color: #beb202;}
+
+#current{
+    font-weight: 600;
+    font-style: oblique;
+}
+
+div {                                                                                   /*Link to CSU*/
+    background-color: #da3e15;
+    text-decoration: solid;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+div h1 {
+    color:#ffffff
+}
+
+div h2 {
+    color:#ffffff
+}
+
+span {                                                                                   /*Text emphasis*/
+    text-decoration: underline;
+    color:#ffffffc0;
+
+}
+
+.noticeMe{
+    font-weight: 500;
+    font-style: italic;
+    font-size: 110%;
+    text-decoration:underline;
+}
+
+ol {                                                                                   /*Styling for lists and tables*/
+    list-style-type: upper-roman;
+    text-align: left;
+}
+
+ul{
+    list-style-type: square;
+    text-align: left;
+    margin-left:20%;
+}
+
+footer ul {
+    list-style-type: none; 
+    margin-left: 15%; 
+    text-align: left;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ffffff;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    border-collapse: collapse;
+}
+
+
+@media print {                                                                              /*Printer friendly configerations*/
+    body {
+        background-color: #ffffff;
+        text-align: center;
+        color:#000000;
+        margin:auto;
+        font-size: larger;
+    }
+
+    h1 {
+        color:#000000
+    }
+
+    nav, img {
+        display: none;
+    }
+
+    div h1 {
+        color:#000000
+    }
+    
+    div h2 {
+        color:#000000
+    }
+
+    span {
+        color:#000000;
+    }
+
+    table, th, td {
+        border: 1px solid #000000;
+        border-collapse: collapse;
+    }
+}

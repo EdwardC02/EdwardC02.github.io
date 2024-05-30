@@ -1,0 +1,16 @@
+/*File contains styling for form webpage. */
+
+body {
+    background-color: #005eaa;
+    text-align: center;
+    color:#ffffff;
+    margin:auto;
+}
+
+span {
+    color: #e70000;
+}
+
+form{
+    text-align: center;
+}
